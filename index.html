@@ -1,0 +1,86 @@
+<!--Criado por Douglas Júlio--(69) 992476425--17/04/2025-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Metadados essenciais para responsividade e charset -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./img/NOVIDADES HDV Junho - Copia.png" type="image/png">
+  <title>Holanda do Vale | Outdoor</title>
+</head>
+<body>
+    <!-- CABEÇALHO com navegação -->
+    <header>
+        <nav class="navbar">
+          <!-- Logo da empresa -->
+          <div class="logo-nav"><img src="./img/NOVIDADES HDV Junho.png" alt="logo holanda do vale" width="200"></div>
+      
+          <!-- Botão hamburguer para menu responsivo -->
+          <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+      
+          <!-- Links de navegação -->
+          <ul class="nav-links" id="navLinks">
+            <li><a href="https://wa.me/5569984265460">Fale conosco</a></li>
+            <li><a href="404.html">Empresa</a></li>
+            <li><a href="404.html">Sobre</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <!-- SESSÃO SOBRE A EMPRESA -->
+    <div class="section">
+      <h2>Sobre a Holanda do Vale</h2>
+      <p>
+        <span>A Holanda do Vale é referência em soluções de publicidade outdoor. Com anos de experiência,
+            entregamos visibilidade estratégica para sua marca em locais de alto impacto.
+            Nossa missão é conectar sua empresa ao público certo com criatividade, agilidade e qualidade.</span> 
+      </p>
+    </div>
+
+    <!-- CARROSSEL DE IMAGENS -->
+    <div class="carousel">
+        <img src="./img/01.png" class="active" alt="Imagem 1">
+        <img src="./img/02.png" alt="Imagem 2">
+        <img src="./img/03.png" alt="Imagem 3">
+        <img src="./img/04.png" alt="Imagem 4">
+    </div>
+
+    <!-- SESSÃO DE CONTATO -->
+    <div class="section">
+      <p>Email: <a href="mailto:contato@holandadovale.com">robson@holandadovale.com.br</a></p>
+      <p>Telefone: <a href="#">(69) 3210-0010</a></p>
+      <p>Endereço: <a href="https://maps.app.goo.gl/cNecAbi5qYAqZfJEA">Rua Guiana, 3077 - Embratel, Porto Velho - RO</a></p>
+      <p>Solicite um orçamento por nosso <a href="https://wa.me/5569984265460" target="_blank">WhatsApp</a>.</p>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer>
+      &copy; 2025 Holanda do Vale - Todos os direitos reservados.
+    </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Carrossel automático de imagens
+    let index = 0;
+    const images = document.querySelectorAll('.carousel img');
+    function showNextImage() {
+      images[index].classList.remove('active');
+      index = (index + 1) % images.length;
+      images[index].classList.add('active');
+    }
+    setInterval(showNextImage, 4000);
+
+    // Função para alternar menu responsivo
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
