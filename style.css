@@ -149,7 +149,7 @@ body {
 
 /* ESTILOS DAS SESSÕES */
 .section {
-  background-color: rgba(0, 0, 0, 0.119);
+  background-color: rgba(142, 139, 139, 0.119);
   padding: 2rem;
   margin: 2rem auto;
   max-width: 700px;
@@ -167,14 +167,14 @@ body {
 }
 
 .section p {
-  color: #000000;
+  color: #ffffff;
   line-height: 1.6;
 }
 
 .section a {
   text-decoration: none;
   font-weight: bold;
-  color: #121212;
+  color: #ffffff;
 }
 
 /* RODAPÉ */
